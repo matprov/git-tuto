@@ -1,0 +1,122 @@
+.left 
+{
+	float: left;
+}
+
+.right 
+{
+	float: right;
+}
+
+.fixed-table
+{
+  table-layout: fixed;
+  width: 100px;
+}
+
+td
+{
+  vertical-align: top;
+}
+
+div.padding 
+{
+  padding-top: 1cm;
+}
+
+table, th, td {
+    border: 20px solid white;
+}
+
+.recette tr 
+{
+  background-color: #ECECEC;
+}
+
+.center-boite {
+    margin-left: auto;
+    margin-right: auto;
+    width: 88%;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.center-small {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.center-inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+.first-column {
+	background-color: #F9F9F9;
+}
+
+.second-column {
+  background-color: #F9F9F9;
+}
+
+.third-column {
+  background-color: #F9F9F9;
+}
+
+.style-font-courier {
+	font-family: Courier New;
+}
+
+.style-font-ubuntu {
+	font-family: Ubuntu;
+}
+
+.center-title {
+	text-align: center;
+}
+
+.green h3 {
+  color: #3D9D5C;
+}
+
+.blue h4 {
+  color: #1b809e;
+}
+
+.blue h3 {
+  color: #1b809e;
+}
+
+.red h3 {
+  color: #ce4844;
+}
+
+.bs-callout-green {
+  border-left-color: #3D9D5C;
+}
+
+.bs-callout-green h4 {
+  color: #3D9D5C;
+}
+
+.bs-callout-black {
+  border-left-color: #000000;
+}
+
+.bs-callout-black h4 {
+  color: #000000;
+}
+
+.bs-callout-purple {
+  border-left-color: #800080;
+}
+
+.bs-callout-purple h4 {
+  color: #800080;
+}
