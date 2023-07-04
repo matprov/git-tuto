@@ -1,76 +1,74 @@
 <!DOCTYPE html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <title>Découvrir Git simplement et rapidement</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="./files/git.png" type="image/png" sizes="16x16">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:regular,bold">
-    <link href="./files/docs.min.css" rel="stylesheet">
-    <link href="./files/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="./files/bootstrap.min.js"></script>
-</head>
-<body>
-
-    <div class="center style-font-ubuntu" align="justify">
-        <div class="center-title padding">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="utf-8">
+      <title>Découvrir Git simplement et rapidement</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" href="./files/git.png" type="image/png" sizes="16x16">
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:regular,bold">
+      <link href="./files/docs.min.css" rel="stylesheet">
+      <link href="./files/style.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+      <script src="./files/bootstrap.min.js"></script>
+   </head>
+   <body>
+      <div class="center style-font-ubuntu" align="justify">
+         <div class="center-title padding">
             <img src="./files/Git-Icon-1788C.png" width="100" height="100" alt="Git">
             <h1>Découvrir Git simplement et rapidement</h1>
             <h5>Par Mathieu Provencher</h5>
-        </div>
-
-        <h2>En quoi consiste Git?</h2>
-
-        <p>Git est un système de gestion de versions de fichiers décentralisé permettant de garder en mémoire toutes les modifications apportées à des fichiers. C’est ainsi pratique lorsque vient le temps de gérer l’évolution d’un projet. Puisqu’il est conçu pour être fiable et soutenir un grand nombre de collaborateurs, il figure parmis les outils les plus populaires de sa catégorie.</p>
-
-        <h2>Structure</h2>
-
-        <p>
+         </div>
+         <h2>En quoi consiste Git?</h2>
+         <p>Git est un système de gestion de versions de fichiers décentralisé permettant de garder en mémoire toutes les modifications apportées à des fichiers. C’est ainsi pratique lorsque vient le temps de gérer l’évolution d’un projet. Puisqu’il est conçu pour être fiable et soutenir un grand nombre de collaborateurs, il figure parmis les outils les plus populaires de sa catégorie.</p>
+         <h2>Structure</h2>
+         <p>
             Le présent document est structuré de façon à rendre la lecture et la compréhension de la technologie Git facile et accessible à tous. De l’installation à la collaboration, en passant par les conventions et l’utilisation de base, ce document vous aidera à tirer profit de cette technologie rapidement. Que vous travailliez sur votre ordinateur personnel à développer un logiciel simpliste ou que vous preniez part d’un réseau servant à développer un projet de grande envergure, les notions présentées seront en mesure de répondre à vos questions. Des hyperliens ont été insérés dans le document afin de se référer rapidement aux boîtes à outils ainsi qu'aux guides d'utilisation officiels des commandes.
             <br><br>
             Tout au long du texte, vous noterez la présence de plusieurs sous-titres. Ceux-ci ont pour but de diviser le texte de façon logique afin de rendre la lecture fluide et trouver rapidement l’information recherchée.
             <br>
-
-            </p><div style="margin-left: 50px;">
-                <table style="width:100%" class="fixed-table">
-                    <tbody><tr>
-                        <td>
-                            <h4><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> Recette</h4>
-                            <b>Atelier démontrant une procédure qui est décortiquée et expliquée au fur et à mesure. Il est important de les suivre afin de ne pas avoir de fichiers manquants.</b>
-                        </td>
-                        <td class="bs-callout-green">
-                            <h4><span class="glyphicon glyphicon glyphicon-briefcase" aria-hidden="true"></span> Boîte à outils</h4>
-                            <b>Tableau présentant un assortiment de paramètres couramment utilisés pour certaines commandes.</b>
-                        </td> 
-                        <td class="bs-callout-danger">
-                            <h4><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> Git en image</h4>
-                            <b>Démonstration d'une image présentant un procédé ou un résultat.</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="blue">
-                            <h4><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Trucs et astuces</h4>
-                            <b>Conseils pour manipuler Git avec aise.</b>
-                        </td>
-                        <td class="bs-callout-purple">
-                            <h4><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Commandes en vrac</h4>
-                            <b>Liste de commandes qui peuvent être utilisées à l'occasion. Leur usage est simple et ne nécessite pas d'explications supplémentaires.</b>
-                        </td>
-                        <td class="bs-callout-warning">
-                            <h4><span class="glyphicon glyphicon-send" aria-hidden="true"></span> Aller plus loin</h4>
-                            <b>Manipulations avancées ou moins courantes.</b>
-                        </td>
-                    </tr>
-                </tbody></table>
-            </div>
-        <p>
-
-        </p><h2>Installation et configuration</h2>
-
-        <p>
+         </p>
+         <div style="margin-left: 50px;">
+            <table style="width:100%" class="fixed-table">
+               <tbody>
+                  <tr>
+                     <td>
+                        <h4><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> Recette</h4>
+                        <b>Atelier démontrant une procédure qui est décortiquée et expliquée au fur et à mesure. Il est important de les suivre afin de ne pas avoir de fichiers manquants.</b>
+                     </td>
+                     <td class="bs-callout-green">
+                        <h4><span class="glyphicon glyphicon glyphicon-briefcase" aria-hidden="true"></span> Boîte à outils</h4>
+                        <b>Tableau présentant un assortiment de paramètres couramment utilisés pour certaines commandes.</b>
+                     </td>
+                     <td class="bs-callout-danger">
+                        <h4><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> Git en image</h4>
+                        <b>Démonstration d'une image présentant un procédé ou un résultat.</b>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="blue">
+                        <h4><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Trucs et astuces</h4>
+                        <b>Conseils pour manipuler Git avec aise.</b>
+                     </td>
+                     <td class="bs-callout-purple">
+                        <h4><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Commandes en vrac</h4>
+                        <b>Liste de commandes qui peuvent être utilisées à l'occasion. Leur usage est simple et ne nécessite pas d'explications supplémentaires.</b>
+                     </td>
+                     <td class="bs-callout-warning">
+                        <h4><span class="glyphicon glyphicon-send" aria-hidden="true"></span> Aller plus loin</h4>
+                        <b>Manipulations avancées ou moins courantes.</b>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <p>
+         </p>
+         <h2>Installation et configuration</h2>
+         <p>
             Git est très simple à installer et configurer. Si l’on est munis d’un système d’exploitation faisant part de la famille Linux, il suffit d’inscrire la commande ‘<code>sudo apt-get install git</code>’ dans le terminal. Pour une station fonctionnant sous Mac OS, il faudra exécuter ‘<code>brew install git</code>’.
             <br><br>
             Si vous avez des interrogations sur la syntaxe d’une commande, vous pouvez à tout moment écrire ‘<code>git help <i>commande</i></code>’ pour ainsi consulter son guide d’utilisation. Les sites tels que <a href="https://git-scm.com/doc">Git SCM</a> ainsi que <a href="https://atlassian.com/git">Atlassian</a> sont bien conçus et pourront aussi vous dépanner rapidement et vous en apprendre davantage sur Git.
@@ -96,966 +94,893 @@
             </code>
             <br><br>
             Vous pouvez maintenant exécuter la commande '<code>git var -l</code>' qui dressera une liste des variables de votre environnement Git. Il est aussi possible de configurer l'éditeur par défaut, si vous avez des préférences.
-        </p>
-
-        <h2>Conventions</h2>
-
-        <p>
+         </p>
+         <h2>Conventions</h2>
+         <p>
             Lorsque l’on travail sur un projet qui prend de l’ampleur et comporte plusieurs versions, il est important de porter une attention toute particulière à la nomenclature qu’emprunte chaque modification. Chaque projet ou entreprise opte pour une nomenclature qui s’avère importante de respecter si nous tenons à ce que le développement soit simplifié pour nous et nos collaborateurs. Ici, nous avons un exemple de nomenclature:
             <br>
-            </p><div style="margin-left: 50px;">
-                <em>
-                type(fonction): sujet
-                <br><br>
-                extra
-                </em>
-            </div>
-            <br>
-            Le <b>type</b> est en réalité la nature de la modification. Voici une liste de types que vous pouvez utiliser lors de l'ajout de modifications à un projet:
+         </p>
+         <div style="margin-left: 50px;">
+            <em>
+            type(fonction): sujet
             <br><br>
-            <div style="margin-left: 50px;">
-                <em>
-                    feat : Implémentation d’une fonctionnalité
-                    <br><br>
-                    fix : Correction d’un bug ou un problème
-                    <br><br>
-                    docs : Ajout ou amélioration de documentation
-                    <br><br>
-                    refac : Modification de code existant
-                    <br><br>
-                    test : Ajout ou amélioration de tests
-                </em>
-            </div>
-            <br>
-            La <b>fonction</b> est la partie du code dans laquelle la modification a été effectuée. Cela sert à retrouver plus facilement les modifications qui touchent une fonctionnalité en particulier.
-            <br>
-            Le <b>sujet</b> décrit explicitement et brièvement les modifications qui ont été apportées lors de votre commit.
-            <br>
-            La section <b>extra</b> sert à ajouter plus d’informations sur les modifications, au besoin.
+            extra
+            </em>
+         </div>
+         <br>
+         Le <b>type</b> est en réalité la nature de la modification. Voici une liste de types que vous pouvez utiliser lors de l'ajout de modifications à un projet:
+         <br><br>
+         <div style="margin-left: 50px;">
+            <em>
+            feat : Implémentation d’une fonctionnalité
             <br><br>
-            Il en va de même pour les branches, que nous pouvons écrire sous la forme '<code>nom-utilisateur/correction-du-probleme-237</code>'.
-        <p></p>
-
-        <h2>Intégration dans une entreprise</h2>
-
-        <p>De nos jours, plusieurs plateformes web vous offrent la possibilité de gérer votre projet Git. Que ce soit pour le storage ou bien pour l'administration de votre projet de façon grahique, les options sont multiples. Chaque site offre des particularitées différentes qui sauront satisfaire vos attentes et ainsi ne pas risquer de perdre l'historique de votre projet. En voici quelques exemples, accompagnés d'une courte description:</p>
-        <br>
-
-        <div style="margin-left: 50px;">
+            fix : Correction d’un bug ou un problème
+            <br><br>
+            docs : Ajout ou amélioration de documentation
+            <br><br>
+            refac : Modification de code existant
+            <br><br>
+            test : Ajout ou amélioration de tests
+            </em>
+         </div>
+         <br>
+         La <b>fonction</b> est la partie du code dans laquelle la modification a été effectuée. Cela sert à retrouver plus facilement les modifications qui touchent une fonctionnalité en particulier.
+         <br>
+         Le <b>sujet</b> décrit explicitement et brièvement les modifications qui ont été apportées lors de votre commit.
+         <br>
+         La section <b>extra</b> sert à ajouter plus d’informations sur les modifications, au besoin.
+         <br><br>
+         Il en va de même pour les branches, que nous pouvons écrire sous la forme '<code>nom-utilisateur/correction-du-probleme-237</code>'.
+         <p></p>
+         <h2>Intégration dans une entreprise</h2>
+         <p>De nos jours, plusieurs plateformes web vous offrent la possibilité de gérer votre projet Git. Que ce soit pour le storage ou bien pour l'administration de votre projet de façon grahique, les options sont multiples. Chaque site offre des particularitées différentes qui sauront satisfaire vos attentes et ainsi ne pas risquer de perdre l'historique de votre projet. En voici quelques exemples, accompagnés d'une courte description:</p>
+         <br>
+         <div style="margin-left: 50px;">
             <table style="width:100%">
-                <tbody><tr>
-                    <td class="green">
+               <tbody>
+                  <tr>
+                     <td class="green">
                         <h3><span class="fa fa-github" aria-hidden="true"></span> GitHub</h3>
                         <b>Très connu dans le monde du <i>Open Source</i>, GitHub est une plateforme très intéressante lorsque nous voulons développer et héberger un projet auquel tout le monde aura accès. Pour se munir d'un repository privé, il faudra débourser une somme d'argent négligeable.</b>
-                    </td>
-                    <td class="blue">
+                     </td>
+                     <td class="blue">
                         <h3><span class="fa fa-bitbucket" aria-hidden="true"></span> BitBucket</h3>
                         <b>Offrant la possibilité d'héberger jusqu'à 5 projets Git gratuitement, BitBucket est une plateforme qui donne une liberté d'esprit lorsque vient le temps de développer rapidement sans se soucier de la confidentialité. Il est possible d'avoir plus de repository qui seront ouvert à tout le monde.</b>
-                    </td> 
-                    <td class="red">
+                     </td>
+                     <td class="red">
                         <h3><span class="fa fa-git" aria-hidden="true"></span> GitLab</h3>
                         <b>Le service GitLab se différencie par la possibilité de télécharger et administrer à 100% sa propre plateforme de gestion de fichiers. Ce qui est synonyme de liberté et de contrôle, sans oublier le point de vue confidentialité. La configuration est simple et permet d'utiliser des options avancées.</b>
-                    </td>
-                </tr>
-            </tbody></table>
-        </div>
-
-        <br><br>
-        <p>De plus, les outils graphiques sont de plus en plus fiables et offrent la possibilité d'intégrer Git facilement dans une entreprise dans laquelle les employés désirent s'initier aux fonctions de base de Git. Il est toujours bon de se munir d'un outil de comparaison de fichiers qui nous aidera lorsqu'un problème fera son apparition.</p>
-
-        <h2>Glossaire</h2>
-
-        <p>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <br><br>
+         <p>De plus, les outils graphiques sont de plus en plus fiables et offrent la possibilité d'intégrer Git facilement dans une entreprise dans laquelle les employés désirent s'initier aux fonctions de base de Git. Il est toujours bon de se munir d'un outil de comparaison de fichiers qui nous aidera lorsqu'un problème fera son apparition.</p>
+         <h2>Glossaire</h2>
+         <p>
             Lors de l’apprentissage d’une nouvelle technologie, plusieurs termes surgissent. Il est préférable de connaître leur définition afin de bien comprendre ce document. À noter que certains termes sont des anglicismes et qu’il est mieux de ne pas les traduire par soucis de compréhensibilité.
-        </p>
-
-        <div>
+         </p>
+         <div>
             <h3 style="margin-left: 25px;">Commit</h3>
             <h4 style="margin-left: 50px;">Capture des modifications apportées au répertoire de travail.</h4>
-
             <h3 style="margin-left: 25px;">HEAD</h3>
             <h4 style="margin-left: 50px;">Pointeur qui fait référence au dernier commit d’une branche. HEAD^ est utilisé pour faire référence à l'avant-dernier commit, au même titre que HEAD~1. Il est donc possible d'écrire HEAD~4 pour faire référence au quatrième commit qui se trouve avant le pointeur HEAD actuel.</h4>
-
             <h3 style="margin-left: 25px;">SHA</h3>
             <h4 style="margin-left: 50px;">Signature digitale représentant un objet Git. Sa forme abbrégée est très utile afin de représenter un commit sans avoir besoin de tout écrire la chaîne de caractères au complet.</h4>
-
             <h3 style="margin-left: 25px;">Repository</h3>
             <h4 style="margin-left: 50px;">Fichiers et dossiers qui contiennent les informations permettant à Git de garder un historique du projet. Il est important de ne pas supprimer le dossier caché ‘.git’ se trouvant à la racine de votre projet car il est essentiel.</h4>
-
             <h3 style="margin-left: 25px;">Index</h3>
             <h4 style="margin-left: 50px;">Lieu de rassemblement des modifications apportées. C’est l’intermédiaire entre le répertoire de travail et le repository Git.</h4>
-
             <h3 style="margin-left: 25px;">Branche</h3>
-            <h4 style="margin-left: 50px;">Espace de travail sur laquelle nous pouvons développer une fonctionnalité ou corriger un problème sans altérer les versions du projet fonctionnelles.</h4>   
-        </div>
-<h2>Apprivoiser Git</h2>
-
-<h4>Il est important de savoir comment créer, modifier et comprendre un repository. Cette toute première section propose un atelier pouvant vous initier aux commandes de base.</h4>
-
-<h3><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> Recette №1 : Commandes de base</h3><br>
-
-	<div class="table-responsive center-inner">
-	    <table class="table table-bordered table-striped recette">
-	        <thead>
-	            <tr>
-	                <th class="col-xs-2 text-center">Nouvelle commande Git</th>
-	                <th class="col-xs-5 text-center">Utilisation</th>
-	                <th class="col-xs-5 text-center">Description</th>
-	            </tr>
-	        </thead>
-	        <tbody>
-	        			            <tr>
-		                <th class="first-column" scope="row" rowspan="2"></th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ mkdir projet-git &amp;&amp; cd projet-git</code></th>
-			                <td class="third-column" style="color:#337ab7">Création et déplacement dans le répertoire d'un nouveau projet pour expérimenter des commandes</td>
-			            </tr> 
-		            	            		            <tr>
-		                <th class="first-column" scope="row" rowspan="3">init</th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git init</code></th>
-			                <td class="third-column" style="color:#337ab7">Initialisation du repository Git</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ echo 'readme' &gt; README.md</code></th>
-			                <td class="third-column" style="color:#337ab7">Écriture de données dans un nouveau fichier</td>
-			            </tr> 
-		            	            		            <tr>
-		                <th class="first-column" scope="row" rowspan="2"><a href="#add">add</a></th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git add -A</code></th>
-			                <td class="third-column" style="color:#337ab7">Ajout de toutes les modifications à l'index</td>
-			            </tr> 
-		            	            		            <tr>
-		                <th class="first-column" scope="row" rowspan="3">commit</th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git commit -m 'feat(Setup): initialisation'</code></th>
-			                <td class="third-column" style="color:#337ab7">Enregistrement des modifications en ajoutant un titre</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git commit --amend -m 'feat(Setup): initialisation du repository'</code></th>
-			                <td class="third-column" style="color:#337ab7">Modification du titre du dernier commit</td>
-			            </tr> 
-		            	            		            <tr>
-		                <th class="first-column" scope="row" rowspan="3">log</th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git log</code></th>
-			                <td class="third-column" style="color:#337ab7">Visualisation du rapport complet de commit</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ echo 'premiere-ligne' | tee -a premier-fichier.md deuxieme-fichier.md troisieme-fichier.md</code></th>
-			                <td class="third-column" style="color:#337ab7">Écriture de données dans plusieurs fichiers</td>
-			            </tr> 
-		            	            		            <tr>
-		                <th class="first-column" scope="row" rowspan="4">status</th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git status</code></th>
-			                <td class="third-column" style="color:#337ab7">Visualisation des fichiers modifiés et ajoutés à l'index</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git add premier-fichier.md</code></th>
-			                <td class="third-column" style="color:#337ab7">Ajout du fichier 'premier-fichier.md' à l'index</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git commit -m 'feat(PremiereRecette): ajout du premier fichier'</code></th>
-			                <td class="third-column" style="color:#337ab7">Enregistrement des modifications en ajoutant un titre</td>
-			            </tr> 
-		            	            		            <tr>
-		                <th class="first-column" scope="row" rowspan="6">tag</th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git tag -a v0.1 -m 'premier-tag'</code></th>
-			                <td class="third-column" style="color:#337ab7">Création d'un identificateur de version</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git add deuxieme-fichier.md</code></th>
-			                <td class="third-column" style="color:#337ab7">Ajout du fichier 'deuxieme-fichier.md' à l'index</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git commit -m 'feat(PremiereRecette): ajout du deuxieme fichier'</code></th>
-			                <td class="third-column" style="color:#337ab7">Enregistrement des modifications en ajoutant un titre</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git tag -a v0.2 -m 'deuxieme-tag'</code></th>
-			                <td class="third-column" style="color:#337ab7">Création d'un identificateur de version</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git tag -d v0.2</code></th>
-			                <td class="third-column" style="color:#337ab7">Suppression de l'identificateur de version</td>
-			            </tr> 
-		            	            		            <tr>
-		                <th class="first-column" scope="row" rowspan="7">clean</th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git clean -n</code></th>
-			                <td class="third-column" style="color:#337ab7">Montre les éléments qui seront supprimés si nous exécutons la prochaine commande</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git clean -f</code></th>
-			                <td class="third-column" style="color:#337ab7">Supprime les fichiers modifiés qui ne sont pas suivis par Git</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ echo 'ligne-ajoutee' &gt;&gt; premier-fichier.md</code></th>
-			                <td class="third-column" style="color:#337ab7">Écriture de données dans le fichier 'premier-fichier.md'</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git add premier-fichier.md</code></th>
-			                <td class="third-column" style="color:#337ab7">Ajout du fichier 'premier-fichier.md' à l'index</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git commit -m 'feat(PremiereRecette): ajout de ligne au premier fichier'</code></th>
-			                <td class="third-column" style="color:#337ab7">Enregistrement des modifications en ajoutant un titre</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git log --oneline</code></th>
-			                <td class="third-column" style="color:#337ab7">Visualisation du rapport des commits avec le format abbrégé</td>
-			            </tr> 
-		            	            		            <tr>
-		                <th class="first-column" scope="row" rowspan="2">revert</th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git revert HEAD~1</code></th>
-			                <td class="third-column" style="color:#337ab7">Retourne au pointeur HEAD~1 en ne modifiant pas l'historique ainsi que l'index</td>
-			            </tr> 
-		            	            		            <tr>
-		                <th class="first-column" scope="row" rowspan="2">whatchanged</th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git whatchanged --oneline</code></th>
-			                <td class="third-column" style="color:#337ab7">Visualisation des modifications apportées depuis le dernier commit</td>
-			            </tr> 
-		            	            		            <tr>
-		                <th class="first-column" scope="row" rowspan="2"><a href="#reset">reset</a></th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git reset --hard <i>SHA</i></code></th>
-			                <td class="third-column" style="color:#337ab7">Restaure l'index et le répertoire de travail et change le pointeur HEAD au commit portant le SHA indiqué</td>
-			            </tr> 
-		            	            		            <tr>
-		                <th class="first-column" scope="row" rowspan="3"><a href="#reflog">reflog</a></th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git reflog</code></th>
-			                <td class="third-column" style="color:#337ab7">Affichage des actions effectuées dans le repository</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git whatchanged</code></th>
-			                <td class="third-column" style="color:#337ab7">Visualisation des modifications apportées depuis le dernier commit</td>
-			            </tr> 
-		            	            		            <tr>
-		                <th class="first-column" scope="row" rowspan="3">show</th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git show v0.1</code></th>
-			                <td class="third-column" style="color:#337ab7">Visualisation des modifications apportées à la v0.1</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git show HEAD^:premier-fichier.md</code></th>
-			                <td class="third-column" style="color:#337ab7">Visualisation de l'état de premier-fichier.md à l'avant-dernier commit</td>
-			            </tr> 
-		            	            	        </tbody>
-	    </table>
-	</div>
-
-<div class="bs-callout bs-callout-info center-small style-font-courier">
-    <h4><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Trucs et astuces : le fichier .gitignore</h4>
-    <p>
-        Avant même de commencer à développer votre projet, assurez-vous de créer un fichier intitulé '.gitignore' afin de ne pas prendre en considération certains fichiers. Comme par exemple, si nous développons avec un framework ou bien notre projet contient beaucoup de fichiers de rapports, cette fonctionnalité a une utilité incontestable.
-        <br><br>
-        Il suffit d'y énumérer les fichiers et/ou les dossiers à exclure en les énumérant, ligne par ligne. Si nous créons un dossier, il ne sera pas enregistré dans l'index Git. Afin de pouvoir le prendre en considération, il suffit d'ajouter un fichier '.gitkeep' à l'intérieur de ce dossier. Sans oublier que nous pouvons précéder le fichier ou dossier d'un '!' dans le fichier '.gitignore'. Finalement, il est possible d'ignorer tous les fichiers qui ont une extension en particulier en inscrivant, comme par exemple, '*.php'.
-    </p>
-</div>
-
-<div class="center-boite">
-    <div class="row">
-            <div id="add" class="bs-callout bs-callout-green col-md-5 center-small style-font-courier">
-        <h4><span class="glyphicon glyphicon glyphicon-briefcase" aria-hidden="true"></span> Boîte à outils: la commande '<a href="https://git-scm.com/docs/git-add">add</a>'</h4>
-        <p>La commande add sert à ajouter les fichiers à l'index de modifications Git.</p>
-        <div class="table-responsive center-inner">
-            <table class="table table-bordered table-striped">
-                <thead>
-                    <tr>
+            <h4 style="margin-left: 50px;">Espace de travail sur laquelle nous pouvons développer une fonctionnalité ou corriger un problème sans altérer les versions du projet fonctionnelles.</h4>
+         </div>
+         <h2>Apprivoiser Git</h2>
+         <h4>Il est important de savoir comment créer, modifier et comprendre un repository. Cette toute première section propose un atelier pouvant vous initier aux commandes de base.</h4>
+         <h3><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> Recette №1 : Commandes de base</h3>
+         <br>
+         <div class="table-responsive center-inner">
+            <table class="table table-bordered table-striped recette">
+               <thead>
+                  <tr>
+                     <th class="col-xs-2 text-center">Nouvelle commande Git</th>
+                     <th class="col-xs-5 text-center">Utilisation</th>
+                     <th class="col-xs-5 text-center">Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="2"></th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ mkdir projet-git &amp;&amp; cd projet-git</code></th>
+                     <td class="third-column" style="color:#337ab7">Création et déplacement dans le répertoire d'un nouveau projet pour expérimenter des commandes</td>
+                  </tr>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="3">init</th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git init</code></th>
+                     <td class="third-column" style="color:#337ab7">Initialisation du repository Git</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ echo 'readme' &gt; README.md</code></th>
+                     <td class="third-column" style="color:#337ab7">Écriture de données dans un nouveau fichier</td>
+                  </tr>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="2"><a href="#add">add</a></th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git add -A</code></th>
+                     <td class="third-column" style="color:#337ab7">Ajout de toutes les modifications à l'index</td>
+                  </tr>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="3">commit</th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git commit -m 'feat(Setup): initialisation'</code></th>
+                     <td class="third-column" style="color:#337ab7">Enregistrement des modifications en ajoutant un titre</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git commit --amend -m 'feat(Setup): initialisation du repository'</code></th>
+                     <td class="third-column" style="color:#337ab7">Modification du titre du dernier commit</td>
+                  </tr>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="3">log</th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git log</code></th>
+                     <td class="third-column" style="color:#337ab7">Visualisation du rapport complet de commit</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ echo 'premiere-ligne' | tee -a premier-fichier.md deuxieme-fichier.md troisieme-fichier.md</code></th>
+                     <td class="third-column" style="color:#337ab7">Écriture de données dans plusieurs fichiers</td>
+                  </tr>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="4">status</th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git status</code></th>
+                     <td class="third-column" style="color:#337ab7">Visualisation des fichiers modifiés et ajoutés à l'index</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git add premier-fichier.md</code></th>
+                     <td class="third-column" style="color:#337ab7">Ajout du fichier 'premier-fichier.md' à l'index</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git commit -m 'feat(PremiereRecette): ajout du premier fichier'</code></th>
+                     <td class="third-column" style="color:#337ab7">Enregistrement des modifications en ajoutant un titre</td>
+                  </tr>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="6">tag</th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git tag -a v0.1 -m 'premier-tag'</code></th>
+                     <td class="third-column" style="color:#337ab7">Création d'un identificateur de version</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git add deuxieme-fichier.md</code></th>
+                     <td class="third-column" style="color:#337ab7">Ajout du fichier 'deuxieme-fichier.md' à l'index</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git commit -m 'feat(PremiereRecette): ajout du deuxieme fichier'</code></th>
+                     <td class="third-column" style="color:#337ab7">Enregistrement des modifications en ajoutant un titre</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git tag -a v0.2 -m 'deuxieme-tag'</code></th>
+                     <td class="third-column" style="color:#337ab7">Création d'un identificateur de version</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git tag -d v0.2</code></th>
+                     <td class="third-column" style="color:#337ab7">Suppression de l'identificateur de version</td>
+                  </tr>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="7">clean</th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git clean -n</code></th>
+                     <td class="third-column" style="color:#337ab7">Montre les éléments qui seront supprimés si nous exécutons la prochaine commande</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git clean -f</code></th>
+                     <td class="third-column" style="color:#337ab7">Supprime les fichiers modifiés qui ne sont pas suivis par Git</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ echo 'ligne-ajoutee' &gt;&gt; premier-fichier.md</code></th>
+                     <td class="third-column" style="color:#337ab7">Écriture de données dans le fichier 'premier-fichier.md'</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git add premier-fichier.md</code></th>
+                     <td class="third-column" style="color:#337ab7">Ajout du fichier 'premier-fichier.md' à l'index</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git commit -m 'feat(PremiereRecette): ajout de ligne au premier fichier'</code></th>
+                     <td class="third-column" style="color:#337ab7">Enregistrement des modifications en ajoutant un titre</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git log --oneline</code></th>
+                     <td class="third-column" style="color:#337ab7">Visualisation du rapport des commits avec le format abbrégé</td>
+                  </tr>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="2">revert</th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git revert HEAD~1</code></th>
+                     <td class="third-column" style="color:#337ab7">Retourne au pointeur HEAD~1 en ne modifiant pas l'historique ainsi que l'index</td>
+                  </tr>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="2">whatchanged</th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git whatchanged --oneline</code></th>
+                     <td class="third-column" style="color:#337ab7">Visualisation des modifications apportées depuis le dernier commit</td>
+                  </tr>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="2"><a href="#reset">reset</a></th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git reset --hard <i>SHA</i></code></th>
+                     <td class="third-column" style="color:#337ab7">Restaure l'index et le répertoire de travail et change le pointeur HEAD au commit portant le SHA indiqué</td>
+                  </tr>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="3"><a href="#reflog">reflog</a></th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git reflog</code></th>
+                     <td class="third-column" style="color:#337ab7">Affichage des actions effectuées dans le repository</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git whatchanged</code></th>
+                     <td class="third-column" style="color:#337ab7">Visualisation des modifications apportées depuis le dernier commit</td>
+                  </tr>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="3">show</th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git show v0.1</code></th>
+                     <td class="third-column" style="color:#337ab7">Visualisation des modifications apportées à la v0.1</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git show HEAD^:premier-fichier.md</code></th>
+                     <td class="third-column" style="color:#337ab7">Visualisation de l'état de premier-fichier.md à l'avant-dernier commit</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div class="bs-callout bs-callout-info center-small style-font-courier">
+            <h4><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Trucs et astuces : le fichier .gitignore</h4>
+            <p>
+               Avant même de commencer à développer votre projet, assurez-vous de créer un fichier intitulé '.gitignore' afin de ne pas prendre en considération certains fichiers. Comme par exemple, si nous développons avec un framework ou bien notre projet contient beaucoup de fichiers de rapports, cette fonctionnalité a une utilité incontestable.
+               <br><br>
+               Il suffit d'y énumérer les fichiers et/ou les dossiers à exclure en les énumérant, ligne par ligne. Si nous créons un dossier, il ne sera pas enregistré dans l'index Git. Afin de pouvoir le prendre en considération, il suffit d'ajouter un fichier '.gitkeep' à l'intérieur de ce dossier. Sans oublier que nous pouvons précéder le fichier ou dossier d'un '!' dans le fichier '.gitignore'. Finalement, il est possible d'ignorer tous les fichiers qui ont une extension en particulier en inscrivant, comme par exemple, '*.php'.
+            </p>
+         </div>
+         <div class="center-boite">
+            <div class="row">
+               <div id="add" class="bs-callout bs-callout-green col-md-5 center-small style-font-courier">
+                  <h4><span class="glyphicon glyphicon glyphicon-briefcase" aria-hidden="true"></span> Boîte à outils: la commande '<a href="https://git-scm.com/docs/git-add">add</a>'</h4>
+                  <p>La commande add sert à ajouter les fichiers à l'index de modifications Git.</p>
+                  <div class="table-responsive center-inner">
+                     <table class="table table-bordered table-striped">
+                        <thead>
+                           <tr>
+                              <th class="col-xs-4 text-center">Syntaxe</th>
+                              <th class="col-xs-4 text-center">Description</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <th scope="row"><code>$ git add .</code></th>
+                              <td class="text-danger">Ajoute à l'index seulement les fichiers ajoutés et modifiés.</td>
+                           </tr>
+                           <tr>
+                              <th scope="row"><code>$ git add -u</code></th>
+                              <td class="text-danger">Ajoute à l'index seulement les fichiers modifiés et supprimés.</td>
+                           </tr>
+                           <tr>
+                              <th scope="row"><code>$ git add -A</code></th>
+                              <td class="text-danger">Ajoute à l'index tous les fichiers ajoutés, modifiés et supprimés.</td>
+                           </tr>
+                           <tr>
+                              <th scope="row"><code>$ git add *.php</code></th>
+                              <td class="text-danger">Ajoute à l'index tous les fichiers portant l'extension '.php'.</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+               <div id="reset" class="bs-callout bs-callout-green col-md-6 col-md-offset-1 nopadding center-small style-font-courier">
+                  <h4><span class="glyphicon glyphicon glyphicon-briefcase" aria-hidden="true"></span> Boîte à outils: la commande '<a href="https://git-scm.com/docs/git-reset">reset</a>'</h4>
+                  <p>La commande reset sert à faire retourner le pointeur HEAD à un certain moment dans l'historique de modifications.</p>
+                  <div class="table-responsive center-inner">
+                     <table class="table table-bordered table-striped">
+                        <thead>
+                           <tr>
+                              <th class="col-xs-4 text-center">Syntaxe</th>
+                              <th class="col-xs-4 text-center">Description</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <th scope="row"><code>$ git reset --mixed <i>SHA</i></code></th>
+                              <td class="text-danger">Restaure l'index sans affecter le répertoire de travail (action par défaut) et restaure le pointeur HEAD au commit portant le SHA spécifié.</td>
+                           </tr>
+                           <tr>
+                              <th scope="row"><code>$ git reset --soft <i>SHA</i></code></th>
+                              <td class="text-danger">Ne restaure pas l'index ni le répertoire de travail, mais restaure le pointeur HEAD au commit portant le SHA spécifié.</td>
+                           </tr>
+                           <tr>
+                              <th scope="row"><code>$ git reset --hard <i>SHA</i></code></th>
+                              <td class="text-danger">Restaure l'index et le répertoire de travail et change le pointeur HEAD au commit portant le SHA spécifié.</td>
+                           </tr>
+                           <tr>
+                              <th scope="row"><code>$ git reset --hard HEAD</code></th>
+                              <td class="text-danger">Efface toutes les modifications effectuées depuis le dernier commit.</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="reflog" style="width: 710px;" class="bs-callout bs-callout-danger center-small style-font-courier">
+            <h4><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> Git en image</h4>
+            <p>La commande <b>reflog</b> permet de visualiser toutes les actions qui ont été exécutées dans le repository. Vous pouvez voir ci-dessous que même si nous avons fait une erreur en faisant un '<code>git reset --hard</code>', il sera toujours possible de retourner aux autres versions précédentes.</p>
+            <img src="./files/reflog.jpg">
+         </div>
+         <div class="bs-callout bs-callout-info center-small style-font-courier">
+            <h4><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Trucs et astuces : checkout, reset et revert</h4>
+            <p>Les trois commande <b>checkout</b>, <b>reset</b> et <b>revert</b> ont tous un point en commun: elles servent à enlever des modifications qui ont été apportées au repository. Puisqu'elles se ressemblent, il est facile de les mélanger. La commande <b>checkout</b> sert à changer de branche ou bien se déplacer dans un commit, en spécifiant son SHA. Il est aussi possible de supprimer les modifications apportées à un fichier. La commande <b>reset</b> sert à supprimer des modifications apportées au repository en retournant dans l'historique ou ignorer les modifications qui ne figurent pas dans un commit. Elle sert aussi à enlever un fichier de l'index Git, s'il a précédemment été ajouté. <b>Revert</b>, elle, sert à retourner dans l'historique, en créant un nouveau commit et ainsi ne pas altérer l'historique. Il est seulement possible d'utiliser cette commande sur un commit, et non pas sur un fichier.</p>
+         </div>
+         <h2>Être structuré avec Git</h2>
+         <h4>Maintenant que notre premier contact avec Git est fait, nous sommes maintenant prêt à bien structurer notre repository afin d'accueillir toutes les nouvelles modifications que nous allons y apporter, sans se perdre dans les nombreux commit.</h4>
+         <h3><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> Recette №2 : Structurer le repository</h3>
+         <br>
+         <div class="table-responsive center-inner">
+            <table class="table table-bordered table-striped recette">
+               <thead>
+                  <tr>
+                     <th class="col-xs-2 text-center">Nouvelle commande Git</th>
+                     <th class="col-xs-5 text-center">Utilisation</th>
+                     <th class="col-xs-5 text-center">Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="2"><a href="#branch">branch</a></th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git branch premier-utilisateur/premiere-branche</code></th>
+                     <td class="third-column" style="color:#337ab7">Création de la branche 'premier-utilisateur/premiere-branche'</td>
+                  </tr>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="6">checkout</th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git checkout premier-utilisateur/premiere-branche</code></th>
+                     <td class="third-column" style="color:#337ab7">Déplacement dans la nouvelle branche 'premier-utilisateur/premiere-branche'</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ echo 'premiere-ligne' | tee -a premier-fichier.md deuxieme-fichier.md</code></th>
+                     <td class="third-column" style="color:#337ab7">Écriture de données dans plusieurs fichiers</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git add premier-fichier.md</code></th>
+                     <td class="third-column" style="color:#337ab7">Ajout du fichier 'premier-fichier.md' à l'index</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git commit -m 'feat(DeuxiemeRecette): ajout de premier-fichier'</code></th>
+                     <td class="third-column" style="color:#337ab7">Enregistrement des modifications en ajoutant un titre</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git add deuxieme-fichier.md</code></th>
+                     <td class="third-column" style="color:#337ab7">Ajout du fichier 'deuxieme-fichier.md' à l'index</td>
+                  </tr>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="5"><a href="#stash">stash</a></th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git stash</code></th>
+                     <td class="third-column" style="color:#337ab7">Enregistrement temporaire des modifications afin de changer de branche</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git checkout -b premier-utilisateur/deuxieme-branche</code></th>
+                     <td class="third-column" style="color:#337ab7">Création et déplacement dans la branche 'premier-utilisateur/deuxieme-branche'</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git stash pop</code></th>
+                     <td class="third-column" style="color:#337ab7">Restauration des modifications effectuées précédemment</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git commit --all -m 'feat(DeuxiemeRecette): ajout de deuxieme-fichier'</code></th>
+                     <td class="third-column" style="color:#337ab7">Enregistrement des modifications en ajoutant un titre</td>
+                  </tr>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="9"><a href="#rebase">rebase</a></th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git rebase premier-utilisateur/premiere-branche</code></th>
+                     <td class="third-column" style="color:#337ab7">Applique les changements de la branche 'premier-utilisateur/premiere-branche' sur la branche courante</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ echo 'troisieme-fichier' &gt; troisieme-fichier.md</code></th>
+                     <td class="third-column" style="color:#337ab7">Écriture de données dans un nouveau fichier</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git add troisieme-fichier.md</code></th>
+                     <td class="third-column" style="color:#337ab7">Ajout du fichier 'troisieme-fichier.md' à l'index</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git commit -m 'feat(DeuxiemeRecette): ajout de troisieme-fichier'</code></th>
+                     <td class="third-column" style="color:#337ab7">Enregistrement des modifications en ajoutant un titre</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git checkout premier-utilisateur/premiere-branche</code></th>
+                     <td class="third-column" style="color:#337ab7">Déplacement dans la branche 'premier-utilisateur/premiere-branche'</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git log --graph --oneline --decorate --all</code></th>
+                     <td class="third-column" style="color:#337ab7">Démonstration de l'arborescence sous forme de graphique</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git reset --hard HEAD~2</code></th>
+                     <td class="third-column" style="color:#337ab7">Restaure l'index et le répertoire de travail et change le pointeur HEAD à l'indice HEAD~2</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git checkout master</code></th>
+                     <td class="third-column" style="color:#337ab7">Déplacement dans la branche maîtresse</td>
+                  </tr>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="3">cherry-pick</th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git cherry-pick <i>SHA</i></code></th>
+                     <td class="third-column" style="color:#337ab7">Application des modifications apportées au commit portant le SHA indiqué se trouvant dans n'importe quelle branche</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git branch premier-utilisateur/nouvelle-branche <i>SHA</i></code></th>
+                     <td class="third-column" style="color:#337ab7">Création de la branche 'premier-utilisateur/nouvelle-branche' qui contiendra les modifications apportées par le commit indiqué par le SHA</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div class="center-boite">
+            <div class="row">
+               <div id="branch" class="bs-callout bs-callout-green col-md-7 center-small style-font-courier">
+                  <h4><span class="glyphicon glyphicon glyphicon-briefcase" aria-hidden="true"></span> Boîte à outils: la commande '<a href="https://git-scm.com/docs/git-branch">branch</a>'</h4>
+                  <p>La commande branch sert à créer et manipuler les branches dans le repository. Ainsi, chaque fonctionnalité peut être développée sur une branche différente, ce qui est plus structuré. À noter que nous pouvons créer autant de branches que l'on désire.</p>
+                  <div class="table-responsive center-inner">
+                     <table class="table table-bordered table-striped">
+                        <thead>
+                           <tr>
+                              <th class="col-xs-4 text-center">Syntaxe</th>
+                              <th class="col-xs-4 text-center">Description</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <th scope="row"><code>$ git branch -a</code></th>
+                              <td class="text-danger">Liste les branches locales et celles sur le serveur.</td>
+                           </tr>
+                           <tr>
+                              <th scope="row"><code>$ git branch utilisateur/premiere-fonctionnalite</code></th>
+                              <td class="text-danger">Ajoute la branche 'utilisateur/premiere-fonctionnalite' au repository.</td>
+                           </tr>
+                           <tr>
+                              <th scope="row"><code>$ git branch -d utilisateur/premiere-fonctionnalite</code></th>
+                              <td class="text-danger">Supprime la branche 'utilisateur/premiere-fonctionnalite' du repository.</td>
+                           </tr>
+                           <tr>
+                              <th scope="row"><code>$ git branch -D utilisateur/premiere-fonctionnalite</code></th>
+                              <td class="text-danger">Supprime la branche 'utilisateur/premiere-fonctionnalite' du repository en ignorant les possibles avertissements.</td>
+                           </tr>
+                           <tr>
+                              <th scope="row"><code>$ git branch -m utilisateur/premiere-fonctionnalite utilisateur/correction-du-bug-237</code></th>
+                              <td class="text-danger">Modifie le nom de la branche.</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+               <div id="stash" class="bs-callout bs-callout-green col-md-4 col-md-offset-1 nopadding center-small style-font-courier">
+                  <h4><span class="glyphicon glyphicon glyphicon-briefcase" aria-hidden="true"></span> Boîte à outils: la commande '<a href="https://git-scm.com/docs/git-stash">stash</a>'</h4>
+                  <p>La commande stash emmagasine les modifications apportées à l'index dans un objet stash. Cela s'avère utile lorsque nous désirons changer de branche qui contient des modifications sans toutefois produire de commit</p>
+                  <div class="table-responsive center-inner">
+                     <table class="table table-bordered table-striped">
+                        <thead>
+                           <tr>
+                              <th class="col-xs-4 text-center">Syntaxe</th>
+                              <th class="col-xs-4 text-center">Description</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <th scope="row"><code>$ git stash list</code></th>
+                              <td class="text-danger">Liste tous les objets stash.</td>
+                           </tr>
+                           <tr>
+                              <th scope="row"><code>$ git stash pop</code></th>
+                              <td class="text-danger">Applique les modification du dernier objet stash sur le répertoire courant.</td>
+                           </tr>
+                           <tr>
+                              <th scope="row"><code>$ git stash pop stash@{3}</code></th>
+                              <td class="text-danger">Applique les modification de l'objet stash@{3} sur le répertoire courant.</td>
+                           </tr>
+                           <tr>
+                              <th scope="row"><code>$ git stash clear</code></th>
+                              <td class="text-danger">Vide la liste d'objets stash.</td>
+                           </tr>
+                           <tr>
+                              <th scope="row"><code>$ git stash drop stash@{1}</code></th>
+                              <td class="text-danger">Supprime l'objet stash@{1}.</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div style="width: 880px" class="bs-callout bs-callout-danger center-small style-font-courier">
+            <h4><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> Git en image</h4>
+            <p>La commande '<code>git log --graph --oneline --decorate --all</code>' nous permet de visualiser les branches ainsi que les modifications présentes dans chacun d'entre elles. De plus, il est possible de situer facilement notre pointeur HEAD ainsi que nos versions de code identifiées par les tags.</p>
+            <img src="./files/log-graph.jpg">
+         </div>
+         <div id="rebase" class="bs-callout bs-callout-green  center-small style-font-courier">
+            <h4><span class="glyphicon glyphicon glyphicon-briefcase" aria-hidden="true"></span> Boîte à outils: la commande '<a href="https://git-scm.com/docs/git-rebase">rebase</a>'</h4>
+            <p>La commande rebase sert à appliquer les modifications provenant d'une branche en direction d'une seconde branche. Elle modifie l'historique et il faut donc prendre nos précautions.</p>
+            <div class="table-responsive center-inner">
+               <table class="table table-bordered table-striped">
+                  <thead>
+                     <tr>
                         <th class="col-xs-4 text-center">Syntaxe</th>
                         <th class="col-xs-4 text-center">Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                	                        <tr>
-                            <th scope="row"><code>$ git add .</code></th>
-                            <td class="text-danger">Ajoute à l'index seulement les fichiers ajoutés et modifiés.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git add -u</code></th>
-                            <td class="text-danger">Ajoute à l'index seulement les fichiers modifiés et supprimés.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git add -A</code></th>
-                            <td class="text-danger">Ajoute à l'index tous les fichiers ajoutés, modifiés et supprimés.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git add *.php</code></th>
-                            <td class="text-danger">Ajoute à l'index tous les fichiers portant l'extension '.php'.</td>
-                        </tr>
-                                    </tbody>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <th scope="row"><code>$ git rebase -i</code></th>
+                        <td class="text-danger">Lance le mode interactif. Permet entre autre de renommer, modifier et fusionner des commits.</td>
+                     </tr>
+                     <tr>
+                        <th scope="row"><code>$ git rebase master utilisateur/premiere-fonctionnalite</code></th>
+                        <td class="text-danger">Applique les changements de la branche 'utilisateur/premiere-fonctionnalite' sur la branche maîtresse.</td>
+                     </tr>
+                     <tr>
+                        <th scope="row"><code>$ git rebase --continue</code></th>
+                        <td class="text-danger">Continue l'opération en cours lorsqu'un conflit est survenu.</td>
+                     </tr>
+                     <tr>
+                        <th scope="row"><code>$ git rebase --abort </code></th>
+                        <td class="text-danger">Annule l'opération en cours lorsqu'un conflit est survenu.</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+         <div class="bs-callout bs-callout-info center-small style-font-courier">
+            <h4><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Trucs et astuces : les dangers des commandes <b>reset</b> et <b>rebase</b></h4>
+            <p>Bien que d'apporter des modifications à notre historique peut être parfois avantageux afin de camoufler nos erreurs, il est risqué d'utiliser les commandes <b>reset</b> et <b>rebase</b> lorsque l'on collabore avec d'autres personnes qui ont déjà téléchargé la branche que nous voulons éditer. En effet, cela peut causer beaucoup de conflits. Il est souhaitable de ne pas en faire usage dans ces circonstances et plutôt s'assurer que tout ce que nous envoyons sur le serveur est bien structuré.</p>
+         </div>
+         <h2>Un peu de collaboration</h2>
+         <h4>Maintenant que notre repository est structuré avec des branches, nous sommes maintenant prêt à accueillir de nouveaux collaborateurs au sein de notre projet. C'est ici que vient important de connaître les bases des commandes Git puisqu'il sera désormais possible de modifier les modifications ayant été apportées au serveur de gestion de code.</h4>
+         <h3><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> Recette №3 : Collaborer</h3>
+         <br>
+         <div class="table-responsive center-inner">
+            <table class="table table-bordered table-striped recette">
+               <thead>
+                  <tr>
+                     <th class="col-xs-2 text-center">Nouvelle commande Git</th>
+                     <th class="col-xs-5 text-center">Utilisation</th>
+                     <th class="col-xs-5 text-center">Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="2"></th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ cd .. &amp;&amp; mkdir clone &amp;&amp; cd clone &amp;&amp; git clone --bare ../projet-git</code></th>
+                     <td class="third-column" style="color:#337ab7">Copie du projet dans un repository de type 'bare' permettant le partage</td>
+                  </tr>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="3">daemon</th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git daemon --enable=receive-pack --verbose --export-all --base-path=. &amp;</code></th>
+                     <td class="third-column" style="color:#337ab7">Mise en marche d'un serveur temporaire de partage de repository (à exécuter dans un second terminal)</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ cd .. &amp;&amp; mkdir collaboration-git &amp;&amp; cd collaboration-git</code></th>
+                     <td class="third-column" style="color:#337ab7">Création et déplacement dans le répertoire d'un nouveau projet</td>
+                  </tr>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="6">clone</th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git clone git://localhost/projet-git.git</code></th>
+                     <td class="third-column" style="color:#337ab7">Copie locale d'un repository distant</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ cd projet-git</code></th>
+                     <td class="third-column" style="color:#337ab7">Déplacement dans le projet cloné</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ echo 'autre-fichier' &gt; autre-fichier.md</code></th>
+                     <td class="third-column" style="color:#337ab7">Écriture de données dans un nouveau fichier</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git add autre-fichier.md</code></th>
+                     <td class="third-column" style="color:#337ab7">Ajout du fichier 'autre-fichier.md' à l'index</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git commit -m 'feat(TroisiemeRecette): ajout de fichier'</code></th>
+                     <td class="third-column" style="color:#337ab7">Enregistrement des modifications en ajoutant un titre</td>
+                  </tr>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="2">pull</th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git pull origin master</code></th>
+                     <td class="third-column" style="color:#337ab7">Application des modifications de la branche maîtresse provenant du serveur</td>
+                  </tr>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="3">push</th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git push origin master</code></th>
+                     <td class="third-column" style="color:#337ab7">Application des modifications de la branche maîtresse vers le serveur</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git pull origin premier-utilisateur/premiere-branche</code></th>
+                     <td class="third-column" style="color:#337ab7">Application des modifications de la branche 'premier-utilisateur/premiere-branche' provenant du serveur</td>
+                  </tr>
+               </tbody>
             </table>
-        </div>
-    </div>
-
-            <div id="reset" class="bs-callout bs-callout-green col-md-6 col-md-offset-1 nopadding center-small style-font-courier">
-        <h4><span class="glyphicon glyphicon glyphicon-briefcase" aria-hidden="true"></span> Boîte à outils: la commande '<a href="https://git-scm.com/docs/git-reset">reset</a>'</h4>
-        <p>La commande reset sert à faire retourner le pointeur HEAD à un certain moment dans l'historique de modifications.</p>
-        <div class="table-responsive center-inner">
-            <table class="table table-bordered table-striped">
-                <thead>
-                    <tr>
-                        <th class="col-xs-4 text-center">Syntaxe</th>
-                        <th class="col-xs-4 text-center">Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                	                        <tr>
-                            <th scope="row"><code>$ git reset --mixed <i>SHA</i></code></th>
-                            <td class="text-danger">Restaure l'index sans affecter le répertoire de travail (action par défaut) et restaure le pointeur HEAD au commit portant le SHA spécifié.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git reset --soft <i>SHA</i></code></th>
-                            <td class="text-danger">Ne restaure pas l'index ni le répertoire de travail, mais restaure le pointeur HEAD au commit portant le SHA spécifié.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git reset --hard <i>SHA</i></code></th>
-                            <td class="text-danger">Restaure l'index et le répertoire de travail et change le pointeur HEAD au commit portant le SHA spécifié.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git reset --hard HEAD</code></th>
-                            <td class="text-danger">Efface toutes les modifications effectuées depuis le dernier commit.</td>
-                        </tr>
-                                    </tbody>
-            </table>
-        </div>
-    </div>
-    </div>
-</div>
-
-<div id="reflog" style="width: 710px;" class="bs-callout bs-callout-danger center-small style-font-courier">
-    <h4><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> Git en image</h4>
-    <p>La commande <b>reflog</b> permet de visualiser toutes les actions qui ont été exécutées dans le repository. Vous pouvez voir ci-dessous que même si nous avons fait une erreur en faisant un '<code>git reset --hard</code>', il sera toujours possible de retourner aux autres versions précédentes.</p>
-    <img src="./files/reflog.jpg">
-</div>
-
-<div class="bs-callout bs-callout-info center-small style-font-courier">
-    <h4><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Trucs et astuces : checkout, reset et revert</h4>
-    <p>Les trois commande <b>checkout</b>, <b>reset</b> et <b>revert</b> ont tous un point en commun: elles servent à enlever des modifications qui ont été apportées au repository. Puisqu'elles se ressemblent, il est facile de les mélanger. La commande <b>checkout</b> sert à changer de branche ou bien se déplacer dans un commit, en spécifiant son SHA. Il est aussi possible de supprimer les modifications apportées à un fichier. La commande <b>reset</b> sert à supprimer des modifications apportées au repository en retournant dans l'historique ou ignorer les modifications qui ne figurent pas dans un commit. Elle sert aussi à enlever un fichier de l'index Git, s'il a précédemment été ajouté. <b>Revert</b>, elle, sert à retourner dans l'historique, en créant un nouveau commit et ainsi ne pas altérer l'historique. Il est seulement possible d'utiliser cette commande sur un commit, et non pas sur un fichier.</p>
-</div>
-
-<h2>Être structuré avec Git</h2>
-
-<h4>Maintenant que notre premier contact avec Git est fait, nous sommes maintenant prêt à bien structurer notre repository afin d'accueillir toutes les nouvelles modifications que nous allons y apporter, sans se perdre dans les nombreux commit.</h4>
-
-<h3><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> Recette №2 : Structurer le repository</h3><br>
-
-	<div class="table-responsive center-inner">
-	    <table class="table table-bordered table-striped recette">
-	        <thead>
-	            <tr>
-	                <th class="col-xs-2 text-center">Nouvelle commande Git</th>
-	                <th class="col-xs-5 text-center">Utilisation</th>
-	                <th class="col-xs-5 text-center">Description</th>
-	            </tr>
-	        </thead>
-	        <tbody>
-	        			            <tr>
-		                <th class="first-column" scope="row" rowspan="2"><a href="#branch">branch</a></th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git branch premier-utilisateur/premiere-branche</code></th>
-			                <td class="third-column" style="color:#337ab7">Création de la branche 'premier-utilisateur/premiere-branche'</td>
-			            </tr> 
-		            	            		            <tr>
-		                <th class="first-column" scope="row" rowspan="6">checkout</th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git checkout premier-utilisateur/premiere-branche</code></th>
-			                <td class="third-column" style="color:#337ab7">Déplacement dans la nouvelle branche 'premier-utilisateur/premiere-branche'</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ echo 'premiere-ligne' | tee -a premier-fichier.md deuxieme-fichier.md</code></th>
-			                <td class="third-column" style="color:#337ab7">Écriture de données dans plusieurs fichiers</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git add premier-fichier.md</code></th>
-			                <td class="third-column" style="color:#337ab7">Ajout du fichier 'premier-fichier.md' à l'index</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git commit -m 'feat(DeuxiemeRecette): ajout de premier-fichier'</code></th>
-			                <td class="third-column" style="color:#337ab7">Enregistrement des modifications en ajoutant un titre</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git add deuxieme-fichier.md</code></th>
-			                <td class="third-column" style="color:#337ab7">Ajout du fichier 'deuxieme-fichier.md' à l'index</td>
-			            </tr> 
-		            	            		            <tr>
-		                <th class="first-column" scope="row" rowspan="5"><a href="#stash">stash</a></th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git stash</code></th>
-			                <td class="third-column" style="color:#337ab7">Enregistrement temporaire des modifications afin de changer de branche</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git checkout -b premier-utilisateur/deuxieme-branche</code></th>
-			                <td class="third-column" style="color:#337ab7">Création et déplacement dans la branche 'premier-utilisateur/deuxieme-branche'</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git stash pop</code></th>
-			                <td class="third-column" style="color:#337ab7">Restauration des modifications effectuées précédemment</td>
-			            </tr>
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git commit --all -m 'feat(DeuxiemeRecette): ajout de deuxieme-fichier'</code></th>
-			                <td class="third-column" style="color:#337ab7">Enregistrement des modifications en ajoutant un titre</td>
-			            </tr> 
-		            	            		            <tr>
-		                <th class="first-column" scope="row" rowspan="9"><a href="#rebase">rebase</a></th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git rebase premier-utilisateur/premiere-branche</code></th>
-			                <td class="third-column" style="color:#337ab7">Applique les changements de la branche 'premier-utilisateur/premiere-branche' sur la branche courante</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ echo 'troisieme-fichier' &gt; troisieme-fichier.md</code></th>
-			                <td class="third-column" style="color:#337ab7">Écriture de données dans un nouveau fichier</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git add troisieme-fichier.md</code></th>
-			                <td class="third-column" style="color:#337ab7">Ajout du fichier 'troisieme-fichier.md' à l'index</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git commit -m 'feat(DeuxiemeRecette): ajout de troisieme-fichier'</code></th>
-			                <td class="third-column" style="color:#337ab7">Enregistrement des modifications en ajoutant un titre</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git checkout premier-utilisateur/premiere-branche</code></th>
-			                <td class="third-column" style="color:#337ab7">Déplacement dans la branche 'premier-utilisateur/premiere-branche'</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git log --graph --oneline --decorate --all</code></th>
-			                <td class="third-column" style="color:#337ab7">Démonstration de l'arborescence sous forme de graphique</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git reset --hard HEAD~2</code></th>
-			                <td class="third-column" style="color:#337ab7">Restaure l'index et le répertoire de travail et change le pointeur HEAD à l'indice HEAD~2</td>
-			            </tr> 
-                        <tr>
-                            <th class="second-column" scope="row"><code>$ git checkout master</code></th>
-                            <td class="third-column" style="color:#337ab7">Déplacement dans la branche maîtresse</td>
-                        </tr> 
-		            	            		            <tr>
-		                <th class="first-column" scope="row" rowspan="3">cherry-pick</th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git cherry-pick <i>SHA</i></code></th>
-			                <td class="third-column" style="color:#337ab7">Application des modifications apportées au commit portant le SHA indiqué se trouvant dans n'importe quelle branche</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git branch premier-utilisateur/nouvelle-branche <i>SHA</i></code></th>
-			                <td class="third-column" style="color:#337ab7">Création de la branche 'premier-utilisateur/nouvelle-branche' qui contiendra les modifications apportées par le commit indiqué par le SHA</td>
-			            </tr> 
-		            	            	        </tbody>
-	    </table>
-	</div>
-
-<div class="center-boite">
-    <div class="row">
-            <div id="branch" class="bs-callout bs-callout-green col-md-7 center-small style-font-courier">
-        <h4><span class="glyphicon glyphicon glyphicon-briefcase" aria-hidden="true"></span> Boîte à outils: la commande '<a href="https://git-scm.com/docs/git-branch">branch</a>'</h4>
-        <p>La commande branch sert à créer et manipuler les branches dans le repository. Ainsi, chaque fonctionnalité peut être développée sur une branche différente, ce qui est plus structuré. À noter que nous pouvons créer autant de branches que l'on désire.</p>
-        <div class="table-responsive center-inner">
-            <table class="table table-bordered table-striped">
-                <thead>
-                    <tr>
-                        <th class="col-xs-4 text-center">Syntaxe</th>
-                        <th class="col-xs-4 text-center">Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                	                        <tr>
-                            <th scope="row"><code>$ git branch -a</code></th>
-                            <td class="text-danger">Liste les branches locales et celles sur le serveur.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git branch utilisateur/premiere-fonctionnalite</code></th>
-                            <td class="text-danger">Ajoute la branche 'utilisateur/premiere-fonctionnalite' au repository.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git branch -d utilisateur/premiere-fonctionnalite</code></th>
-                            <td class="text-danger">Supprime la branche 'utilisateur/premiere-fonctionnalite' du repository.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git branch -D utilisateur/premiere-fonctionnalite</code></th>
-                            <td class="text-danger">Supprime la branche 'utilisateur/premiere-fonctionnalite' du repository en ignorant les possibles avertissements.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git branch -m utilisateur/premiere-fonctionnalite utilisateur/correction-du-bug-237</code></th>
-                            <td class="text-danger">Modifie le nom de la branche.</td>
-                        </tr>
-                                    </tbody>
-            </table>
-        </div>
-    </div>
-
-            <div id="stash" class="bs-callout bs-callout-green col-md-4 col-md-offset-1 nopadding center-small style-font-courier">
-        <h4><span class="glyphicon glyphicon glyphicon-briefcase" aria-hidden="true"></span> Boîte à outils: la commande '<a href="https://git-scm.com/docs/git-stash">stash</a>'</h4>
-        <p>La commande stash emmagasine les modifications apportées à l'index dans un objet stash. Cela s'avère utile lorsque nous désirons changer de branche qui contient des modifications sans toutefois produire de commit</p>
-        <div class="table-responsive center-inner">
-            <table class="table table-bordered table-striped">
-                <thead>
-                    <tr>
-                        <th class="col-xs-4 text-center">Syntaxe</th>
-                        <th class="col-xs-4 text-center">Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                	                        <tr>
-                            <th scope="row"><code>$ git stash list</code></th>
-                            <td class="text-danger">Liste tous les objets stash.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git stash pop</code></th>
-                            <td class="text-danger">Applique les modification du dernier objet stash sur le répertoire courant.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git stash pop stash@{3}</code></th>
-                            <td class="text-danger">Applique les modification de l'objet stash@{3} sur le répertoire courant.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git stash clear</code></th>
-                            <td class="text-danger">Vide la liste d'objets stash.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git stash drop stash@{1}</code></th>
-                            <td class="text-danger">Supprime l'objet stash@{1}.</td>
-                        </tr>
-                                    </tbody>
-            </table>
-        </div>
-    </div>
-    </div>
-</div>
-
-<div style="width: 880px" class="bs-callout bs-callout-danger center-small style-font-courier">
-    <h4><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> Git en image</h4>
-    <p>La commande '<code>git log --graph --oneline --decorate --all</code>' nous permet de visualiser les branches ainsi que les modifications présentes dans chacun d'entre elles. De plus, il est possible de situer facilement notre pointeur HEAD ainsi que nos versions de code identifiées par les tags.</p>
-    <img src="./files/log-graph.jpg">
-</div>
-
-    <div id="rebase" class="bs-callout bs-callout-green  center-small style-font-courier">
-        <h4><span class="glyphicon glyphicon glyphicon-briefcase" aria-hidden="true"></span> Boîte à outils: la commande '<a href="https://git-scm.com/docs/git-rebase">rebase</a>'</h4>
-        <p>La commande rebase sert à appliquer les modifications provenant d'une branche en direction d'une seconde branche. Elle modifie l'historique et il faut donc prendre nos précautions.</p>
-        <div class="table-responsive center-inner">
-            <table class="table table-bordered table-striped">
-                <thead>
-                    <tr>
-                        <th class="col-xs-4 text-center">Syntaxe</th>
-                        <th class="col-xs-4 text-center">Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                	                        <tr>
-                            <th scope="row"><code>$ git rebase -i</code></th>
-                            <td class="text-danger">Lance le mode interactif. Permet entre autre de renommer, modifier et fusionner des commits.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git rebase master utilisateur/premiere-fonctionnalite</code></th>
-                            <td class="text-danger">Applique les changements de la branche 'utilisateur/premiere-fonctionnalite' sur la branche maîtresse.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git rebase --continue</code></th>
-                            <td class="text-danger">Continue l'opération en cours lorsqu'un conflit est survenu.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git rebase --abort </code></th>
-                            <td class="text-danger">Annule l'opération en cours lorsqu'un conflit est survenu.</td>
-                        </tr>
-                                    </tbody>
-            </table>
-        </div>
-    </div>
-
-<div class="bs-callout bs-callout-info center-small style-font-courier">
-    <h4><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Trucs et astuces : les dangers des commandes <b>reset</b> et <b>rebase</b></h4>
-    <p>Bien que d'apporter des modifications à notre historique peut être parfois avantageux afin de camoufler nos erreurs, il est risqué d'utiliser les commandes <b>reset</b> et <b>rebase</b> lorsque l'on collabore avec d'autres personnes qui ont déjà téléchargé la branche que nous voulons éditer. En effet, cela peut causer beaucoup de conflits. Il est souhaitable de ne pas en faire usage dans ces circonstances et plutôt s'assurer que tout ce que nous envoyons sur le serveur est bien structuré.</p>
-</div>
-
-<h2>Un peu de collaboration</h2>
-
-<h4>Maintenant que notre repository est structuré avec des branches, nous sommes maintenant prêt à accueillir de nouveaux collaborateurs au sein de notre projet. C'est ici que vient important de connaître les bases des commandes Git puisqu'il sera désormais possible de modifier les modifications ayant été apportées au serveur de gestion de code.</h4>
-
-<h3><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> Recette №3 : Collaborer</h3><br>
-
-	<div class="table-responsive center-inner">
-	    <table class="table table-bordered table-striped recette">
-	        <thead>
-	            <tr>
-	                <th class="col-xs-2 text-center">Nouvelle commande Git</th>
-	                <th class="col-xs-5 text-center">Utilisation</th>
-	                <th class="col-xs-5 text-center">Description</th>
-	            </tr>
-	        </thead>
-	        <tbody>
-                 <tr>
-                        <th class="first-column" scope="row" rowspan="2"></th>
-                    </tr>
-
-                                            <tr>
-                            <th class="second-column" scope="row"><code>$ cd .. &amp;&amp; mkdir clone &amp;&amp; cd clone &amp;&amp; git clone --bare ../projet-git</code></th>
-                            <td class="third-column" style="color:#337ab7">Copie du projet dans un repository de type 'bare' permettant le partage</td>
-                        </tr> 
-
-	        			            <tr>
-		                <th class="first-column" scope="row" rowspan="3">daemon</th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git daemon --enable=receive-pack --verbose --export-all --base-path=. &amp;</code></th>
-			                <td class="third-column" style="color:#337ab7">Mise en marche d'un serveur temporaire de partage de repository (à exécuter dans un second terminal)</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ cd .. &amp;&amp; mkdir collaboration-git &amp;&amp; cd collaboration-git</code></th>
-			                <td class="third-column" style="color:#337ab7">Création et déplacement dans le répertoire d'un nouveau projet</td>
-			            </tr> 
-		            	            		            <tr>
-		                <th class="first-column" scope="row" rowspan="6">clone</th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git clone git://localhost/projet-git.git</code></th>
-			                <td class="third-column" style="color:#337ab7">Copie locale d'un repository distant</td>
-			            </tr> 
-                        <tr>
-                            <th class="second-column" scope="row"><code>$ cd projet-git</code></th>
-                            <td class="third-column" style="color:#337ab7">Déplacement dans le projet cloné</td>
-                        </tr> 
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ echo 'autre-fichier' &gt; autre-fichier.md</code></th>
-			                <td class="third-column" style="color:#337ab7">Écriture de données dans un nouveau fichier</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git add autre-fichier.md</code></th>
-			                <td class="third-column" style="color:#337ab7">Ajout du fichier 'autre-fichier.md' à l'index</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git commit -m 'feat(TroisiemeRecette): ajout de fichier'</code></th>
-			                <td class="third-column" style="color:#337ab7">Enregistrement des modifications en ajoutant un titre</td>
-			            </tr> 
-		            	            		            <tr>
-		                <th class="first-column" scope="row" rowspan="2">pull</th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git pull origin master</code></th>
-			                <td class="third-column" style="color:#337ab7">Application des modifications de la branche maîtresse provenant du serveur</td>
-			            </tr> 
-		            	            		            <tr>
-		                <th class="first-column" scope="row" rowspan="3">push</th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git push origin master</code></th>
-			                <td class="third-column" style="color:#337ab7">Application des modifications de la branche maîtresse vers le serveur</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git pull origin premier-utilisateur/premiere-branche</code></th>
-			                <td class="third-column" style="color:#337ab7">Application des modifications de la branche 'premier-utilisateur/premiere-branche' provenant du serveur</td>
-			            </tr> 
-		            	            	        </tbody>
-	    </table>
-	</div>
-
-<div class="bs-callout bs-callout-purple center-small style-font-courier">
-    <h4><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Commandes en vrac</h4>
-    <p>Voici une liste de commandes faciles d'utilisation qui ne vous sont pas proposées dans les recettes, mais qui sont toutefois utiles.</p>
-    <div style="margin-left: 50px;">
-    	<b>fetch</b>: Synchronisation des objets qui sont sur le serveur distant.
-    	<br>
-    	<b>shortlog</b>: Visualisation de la progression du projet.
-    	<br>
-    	<b>cherry</b>: Liste des commits qui n'ont pas été transmis sur le serveur distant.
-    	<br>
-    	<b>gc</b>: Ménage et optimisation automatisée du repository Git.
-    </div>
-</div>
-
-<div class="bs-callout bs-callout-warning center-small style-font-courier">
-    <h4><span class="glyphicon glyphicon-send" aria-hidden="true"></span> Aller plus loin</h4>
-    <p>Il vient à l'occasion le besoin de créer un projet Git dans lequel repose un second projet qui constitue en réalité une fonctionnalité connexe. C'est alors que la commande <a href="https://git-scm.com/docs/git-submodule"><b>submodule</b></a> s'avère utile afin d'éviter de mal structurer le repository.</p>
-</div>
-
-<h2>La correction de conflits</h2>
-
-<h4>Et vient maintenant les conflits! Et oui, il est inévitable que lorsque nous travaillons à l'aide d'un système de gestion de fichiers partagés par plusieurs développeurs, les conflits fassent surface. Il sera toutefois possible de réduire ce nombre de conflits lorsque vous aurez plus d'expérience et saurez comment bien structurer votre repository.</h4>
-
-<h3><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> Recette №4 : Résolution de conflits</h3><br>
-
-	<div class="table-responsive center-inner">
-	    <table class="table table-bordered table-striped recette">
-	        <thead>
-	            <tr>
-	                <th class="col-xs-2 text-center">Nouvelle commande Git</th>
-	                <th class="col-xs-5 text-center">Utilisation</th>
-	                <th class="col-xs-5 text-center">Description</th>
-	            </tr>
-	        </thead>
-	        <tbody>
-	        			            <tr>
-		                <th class="first-column" scope="row" rowspan="7"></th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git checkout -b deuxieme-utilisateur/branche-collaboration</code></th>
-			                <td class="third-column" style="color:#337ab7">Création et déplacement dans la branche 'deuxieme-utilisateur/branche-collaboration'</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ echo 'premiere-ligne' &gt; fichier-collaboration.md</code></th>
-			                <td class="third-column" style="color:#337ab7">Écriture de données dans un nouveau fichier</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git add fichier-collaboration.md</code></th>
-			                <td class="third-column" style="color:#337ab7">Ajout du fichier 'fichier-collaboration.md' à l'index</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git commit -m 'feat(QuatriemeRecette): ajout de fichier de collaboration'</code></th>
-			                <td class="third-column" style="color:#337ab7">Enregistrement des modifications en ajoutant un titre</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git checkout master</code></th>
-			                <td class="third-column" style="color:#337ab7">Déplacement dans la branche maîtresse du projet</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git pull --rebase origin master</code></th>
-			                <td class="third-column" style="color:#337ab7">Application des modifications de la branche maîtresse provenant du serveur en utilisant le procédé rebase</td>
-			            </tr> 
-		            	            		            <tr>
-		                <th class="first-column" scope="row" rowspan="2"><a href="#merge">merge</a></th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git merge deuxieme-utilisateur/branche-collaboration</code></th>
-			                <td class="third-column" style="color:#337ab7">Incorporation de la branche 'deuxieme-utilisateur/branche-collaboration' dans la branche courante, soit maîtresse</td>
-			            </tr> 
-		            	            		            <tr>
-		                <th class="first-column" scope="row" rowspan="2">diff</th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git diff HEAD~1 HEAD</code></th>
-			                <td class="third-column" style="color:#337ab7">Visualisation des différences entre le dernier et l'avant dernier commit</td>
-			            </tr> 
-		            	            		            <tr>
-		                <th class="first-column" scope="row" rowspan="2">difftool</th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git difftool -t kdiff3</code></th>
-			                <td class="third-column" style="color:#337ab7">Ouverture de l'outil de comparaison de fichiers, s'il y a des différences</td>
-			            </tr> 
-		            	            		            <tr>
-		                <th class="first-column" scope="row" rowspan="3">mergetool</th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git mergetool -t kdiff3</code></th>
-			                <td class="third-column" style="color:#337ab7">Ouverture de l'outil de gestion de conflits</td>
-			            </tr> 
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git push origin master</code></th>
-			                <td class="third-column" style="color:#337ab7">Application des modifications de la branche maîtresse vers le serveur</td>
-			            </tr> 
-		            	            		            <tr>
-		                <th class="first-column" scope="row" rowspan="2"><a href="#blame">blame</a></th>
-		            </tr>
-
-		            			            <tr>
-			                <th class="second-column" scope="row"><code>$ git blame fichier-collaboration.md</code></th>
-			                <td class="third-column" style="color:#337ab7">Démonstration des auteurs ayant altéré l'état du fichier 'fichier-collaboration.md'</td>
-			            </tr> 
-		            	            	        </tbody>
-	    </table>
-	</div>
-
-    <div id="blame" class="bs-callout bs-callout-green  center-small style-font-courier">
-        <h4><span class="glyphicon glyphicon glyphicon-briefcase" aria-hidden="true"></span> Boîte à outils: la commande '<a href="https://git-scm.com/docs/git-blame">blame</a>'</h4>
-        <p>La commande blame sert à montrer l'auteur d'une modification et surtout à quel moment dans l'historique elle a été comise.</p>
-        <div class="table-responsive center-inner">
-            <table class="table table-bordered table-striped">
-                <thead>
-                    <tr>
-                        <th class="col-xs-4 text-center">Syntaxe</th>
-                        <th class="col-xs-4 text-center">Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                	                        <tr>
-                            <th scope="row"><code>$ git blame -n premier-fichier.md</code></th>
-                            <td class="text-danger">Montre le rapport en spécifiant les numéros de ligne.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git blame -L 20,30 premier-fichier.md</code></th>
-                            <td class="text-danger">Montre seulement les lignes 20 à 30 du fichier.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git blame premier-fichier.md v2.2</code></th>
-                            <td class="text-danger">Montre le rapport en ignorant les modifications précédentes à la version 2.2.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git blame --since=2.weeks</code></th>
-                            <td class="text-danger">Montre le rapport en ignorant les modifications ayant été apportées depuis plus de deux semaines.</td>
-                        </tr>
-                                    </tbody>
-            </table>
-        </div>
-    </div>
-
-<div style="width: 570px;" class="bs-callout bs-callout-danger center-small style-font-courier">
-    <h4><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> Git en image</h4>
-    <p>Il n'est pas rare que lorsque vient le temps de joindre une branche quelconque à la branche maîtresse, il faut corriger des conflits puisqu'il y a des lignes qui ont été modifiées. Voici une capture d'écran démontrant ce à quoi le fichier problématique ressemblera après que Git aura tenté de résoudre le conflit, sans succès.</p>
-    <img src="./files/merge.jpg"><br><br>
-    <p>Les endroits où modifications ont eu lieu sont clairement indiquées et facilitent la résolution de conflits. Il suffit de supprimer les parties que nous n'avons pas de besoin, ajouter les fichiers à l'index et exécuter de nouveau la commande <b>merge</b> afin de continuer la procédure. Si nous voulons éviter de spécifier à chaque fois quelle branche contient la bonne version de code, il est possible d'utiliser les stratégies de résolution, en spécifiant soit l'option '<code>--strategy=ours</code>' ou '<code>--strategy=theirs</code>'. </p>
-</div>
-
-    <div id="merge" class="bs-callout bs-callout-green  center-small style-font-courier">
-        <h4><span class="glyphicon glyphicon glyphicon-briefcase" aria-hidden="true"></span> Boîte à outils: la commande '<a href="https://git-scm.com/docs/git-merge">merge</a>'</h4>
-        <p>La commande merge sert à appliquer les modifications en provenance d'une autre branche.</p>
-        <div class="table-responsive center-inner">
-            <table class="table table-bordered table-striped">
-                <thead>
-                    <tr>
-                        <th class="col-xs-4 text-center">Syntaxe</th>
-                        <th class="col-xs-4 text-center">Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                	                        <tr>
-                            <th scope="row"><code>$ git merge utilisateur/premiere-fonctionnalite</code></th>
-                            <td class="text-danger">Applique les modifications de la branche utilisateur/premiere-fonctionnalite sur la branche maîtresse.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git merge --strategy=ours utilisateur/premiere-fonctionnalite</code></th>
-                            <td class="text-danger">Applique les modifications de la branche utilisateur/premiere-fonctionnalite sur la branche maîtresse en gardant les versions de cette dernière, lorsque conflit survient.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git merge --strategy=theirs utilisateur/premiere-fonctionnalite</code></th>
-                            <td class="text-danger">Applique les modifications de la branche utilisateur/premiere-fonctionnalite sur la branche maîtresse en gardant les versions de la première, lorsque conflit survient.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git merge --abort</code></th>
-                            <td class="text-danger">Annule l'opération d'application de modifications.</td>
-                        </tr>
-                                    </tbody>
-            </table>
-        </div>
-    </div>
-
-<div class="center-boite">
-    <div class="row">
-        <div class="bs-callout bs-callout-info center-small style-font-courier col-md-6">
-            <h4><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Trucs et astuces : merge et rebase</h4>
-            <p>Les commandes <b>merge</b> et <b>rebase</b> sont toutes deux utilisées afin d'incorporer les changements effectués dans une branche au sein d'une autre branche. Par contre, il est important de faire la différence entre les deux. En effet, <b>merge</b> ajoute les modifications d'une branche à la toute fin de la seconde branche alors que <b>rebase</b>, qui est à utiliser avec précaution, réécrit l'historique en incorporant les modifications. Cette seconde option permet de maintenir un historique plus clair, mais peut causer de sérieux problèmes lorsque nous travaillons avec des collaborateurs.</p>
-        </div>
-
-        <div class="bs-callout bs-callout-warning center-small style-font-courier col-md-5 col-md-offset-1 nopadding">
+         </div>
+         <div class="bs-callout bs-callout-purple center-small style-font-courier">
+            <h4><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Commandes en vrac</h4>
+            <p>Voici une liste de commandes faciles d'utilisation qui ne vous sont pas proposées dans les recettes, mais qui sont toutefois utiles.</p>
+            <div style="margin-left: 50px;">
+               <b>fetch</b>: Synchronisation des objets qui sont sur le serveur distant.
+               <br>
+               <b>shortlog</b>: Visualisation de la progression du projet.
+               <br>
+               <b>cherry</b>: Liste des commits qui n'ont pas été transmis sur le serveur distant.
+               <br>
+               <b>gc</b>: Ménage et optimisation automatisée du repository Git.
+            </div>
+         </div>
+         <div class="bs-callout bs-callout-warning center-small style-font-courier">
             <h4><span class="glyphicon glyphicon-send" aria-hidden="true"></span> Aller plus loin</h4>
-            <p>Il arrive parfois qu'un problème s'introduit dans notre projet et qu'il est difficile de cerner à partir de quel commit il s'est introduit. Afin d'accélérer le procédé d'investigation, une commande Git vient à notre rescousse. Elle se nomme <b><a href="#bisect">bisect</a></b> et itère de façon logique parmis nos modifications afin de trouver l'erreur. Il ne nous suffit plus que de spécifier à cet outil si le problème en question existe toujours ou n'a pas encore fait son apparition. Il est aussi possible de lui donner une tâche à exécuter automatiquement, question d'accélérer la manipulation.</p>
-        </div>
-    </div>
-</div>
-
-<div class="bs-callout bs-callout-danger center-small style-font-courier">
-    <h4><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> Git en image</h4>
-    <p>Les outils de comparaison de fichiers et de gestion de conflits peuvent simplifier l'entretien de votre repository Git. Voici une capture d'écran de l'outil <b>kdiff3</b> qui se charge de vous indiquer les conflits et les régler les uns après les autres.</p>
-    <img style="border:3px solid #CE4844; max-width:100%;" src="./files/kdiff3.jpg">
-</div>
-
-    <div id="bisect" class="bs-callout bs-callout-green  center-small style-font-courier">
-        <h4><span class="glyphicon glyphicon glyphicon-briefcase" aria-hidden="true"></span> Boîte à outils: la commande '<a href="https://git-scm.com/docs/git-bisect">bisect</a>'</h4>
-        <p>La commande bisect sert à déterminer à partir de quel commit un problème s'est introduit dans le projet.</p>
-        <div class="table-responsive center-inner">
-            <table class="table table-bordered table-striped">
-                <thead>
-                    <tr>
+            <p>Il vient à l'occasion le besoin de créer un projet Git dans lequel repose un second projet qui constitue en réalité une fonctionnalité connexe. C'est alors que la commande <a href="https://git-scm.com/docs/git-submodule"><b>submodule</b></a> s'avère utile afin d'éviter de mal structurer le repository.</p>
+         </div>
+         <h2>La correction de conflits</h2>
+         <h4>Et vient maintenant les conflits! Et oui, il est inévitable que lorsque nous travaillons à l'aide d'un système de gestion de fichiers partagés par plusieurs développeurs, les conflits fassent surface. Il sera toutefois possible de réduire ce nombre de conflits lorsque vous aurez plus d'expérience et saurez comment bien structurer votre repository.</h4>
+         <h3><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> Recette №4 : Résolution de conflits</h3>
+         <br>
+         <div class="table-responsive center-inner">
+            <table class="table table-bordered table-striped recette">
+               <thead>
+                  <tr>
+                     <th class="col-xs-2 text-center">Nouvelle commande Git</th>
+                     <th class="col-xs-5 text-center">Utilisation</th>
+                     <th class="col-xs-5 text-center">Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="7"></th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git checkout -b deuxieme-utilisateur/branche-collaboration</code></th>
+                     <td class="third-column" style="color:#337ab7">Création et déplacement dans la branche 'deuxieme-utilisateur/branche-collaboration'</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ echo 'premiere-ligne' &gt; fichier-collaboration.md</code></th>
+                     <td class="third-column" style="color:#337ab7">Écriture de données dans un nouveau fichier</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git add fichier-collaboration.md</code></th>
+                     <td class="third-column" style="color:#337ab7">Ajout du fichier 'fichier-collaboration.md' à l'index</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git commit -m 'feat(QuatriemeRecette): ajout de fichier de collaboration'</code></th>
+                     <td class="third-column" style="color:#337ab7">Enregistrement des modifications en ajoutant un titre</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git checkout master</code></th>
+                     <td class="third-column" style="color:#337ab7">Déplacement dans la branche maîtresse du projet</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git pull --rebase origin master</code></th>
+                     <td class="third-column" style="color:#337ab7">Application des modifications de la branche maîtresse provenant du serveur en utilisant le procédé rebase</td>
+                  </tr>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="2"><a href="#merge">merge</a></th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git merge deuxieme-utilisateur/branche-collaboration</code></th>
+                     <td class="third-column" style="color:#337ab7">Incorporation de la branche 'deuxieme-utilisateur/branche-collaboration' dans la branche courante, soit maîtresse</td>
+                  </tr>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="2">diff</th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git diff HEAD~1 HEAD</code></th>
+                     <td class="third-column" style="color:#337ab7">Visualisation des différences entre le dernier et l'avant dernier commit</td>
+                  </tr>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="2">difftool</th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git difftool -t kdiff3</code></th>
+                     <td class="third-column" style="color:#337ab7">Ouverture de l'outil de comparaison de fichiers, s'il y a des différences</td>
+                  </tr>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="3">mergetool</th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git mergetool -t kdiff3</code></th>
+                     <td class="third-column" style="color:#337ab7">Ouverture de l'outil de gestion de conflits</td>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git push origin master</code></th>
+                     <td class="third-column" style="color:#337ab7">Application des modifications de la branche maîtresse vers le serveur</td>
+                  </tr>
+                  <tr>
+                     <th class="first-column" scope="row" rowspan="2"><a href="#blame">blame</a></th>
+                  </tr>
+                  <tr>
+                     <th class="second-column" scope="row"><code>$ git blame fichier-collaboration.md</code></th>
+                     <td class="third-column" style="color:#337ab7">Démonstration des auteurs ayant altéré l'état du fichier 'fichier-collaboration.md'</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div id="blame" class="bs-callout bs-callout-green  center-small style-font-courier">
+            <h4><span class="glyphicon glyphicon glyphicon-briefcase" aria-hidden="true"></span> Boîte à outils: la commande '<a href="https://git-scm.com/docs/git-blame">blame</a>'</h4>
+            <p>La commande blame sert à montrer l'auteur d'une modification et surtout à quel moment dans l'historique elle a été comise.</p>
+            <div class="table-responsive center-inner">
+               <table class="table table-bordered table-striped">
+                  <thead>
+                     <tr>
                         <th class="col-xs-4 text-center">Syntaxe</th>
                         <th class="col-xs-4 text-center">Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                	                        <tr>
-                            <th scope="row"><code>$ git bisect start</code></th>
-                            <td class="text-danger">Débute l'investigation.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git bisect good <i>SHA</i></code></th>
-                            <td class="text-danger">Spécifie un commit qui ne contenait pas encore le problème.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git bisect bad <i>SHA</i></code></th>
-                            <td class="text-danger">Spécifie un commit qui contient le problème en question.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git bisect good</code></th>
-                            <td class="text-danger">Spécifie que le présent commit n'a pas de problème.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git bisect bad</code></th>
-                            <td class="text-danger">Spécifie que le présent commit a un problème.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git bisect visualize</code></th>
-                            <td class="text-danger">Permet de visualiser avec un éditeur graphique.</td>
-                        </tr>
-                                            <tr>
-                            <th scope="row"><code>$ git bisect reset</code></th>
-                            <td class="text-danger">Met fin à l'opération en cours.</td>
-                        </tr>
-                                    </tbody>
-            </table>
-        </div>
-    </div>
-
-<div class="bs-callout bs-callout-warning center-small style-font-courier">
-    <h4><span class="glyphicon glyphicon-send" aria-hidden="true"></span> Aller plus loin</h4>
-    <p>
-        Étant développé dans le but d'accélérer le développement d'un projet, Git nous offre plusieurs outils qui sont à notre disposition pour nous aider. Lorsque vient le temps de corriger un conflit suite à la liaison de deux branches, ne serait-ce pas pratique que d'enregistrer notre procédure? C'est ce que nous propose la fabuleuse commande <a href="https://git-scm.com/docs/git-rerere"><b>rerere</b></a>, qui nous permet de mémoriser nos corrections sous forme de macro pour ainsi les réutiliser lorsque bon nous semble.
-        <br><br>
-        De plus, les <a href="https://git-scm.com/docs/githooks"><b>Git hooks</b></a> nous permettent de faire rouler un script lorsqu'un évènement est déclenché. Comme par exemple, avant que les modifications soient envoyées au serveur ou bien à chaque fois que le serveur reçoit de nouvelles modifications.
-        <br><br>
-        Vous pouvez consulter le guide d'utilisation de Git afin de découvrir et mettre en pratique ces fonctionnalités.
-    </p>
-</div>
-
-<h2>Le mot de la fin</h2>
-
-<p>Nous avons fait le tour des commandes qui sont à votre disposition lorsque vous développez un projet avec Git et votre boîte à outils commence à être bien rempli. N'oubliez pas que vous pouvez à tout moment clôner un repository ou bien en initialiser un afin de tester des fonctionnalités que vous venez tout juste d'apprendre. Plus vous pratiquer, plus vous serez à l'aise et ça deviendra un réflexe pour vous que de créer une branche, corriger un conflit ou bien même de diagnostiquer l'état d'un repository Git.</p><p>
-
-</div></body></html>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <th scope="row"><code>$ git blame -n premier-fichier.md</code></th>
+                        <td class="text-danger">Montre le rapport en spécifiant les numéros de ligne.</td>
+                     </tr>
+                     <tr>
+                        <th scope="row"><code>$ git blame -L 20,30 premier-fichier.md</code></th>
+                        <td class="text-danger">Montre seulement les lignes 20 à 30 du fichier.</td>
+                     </tr>
+                     <tr>
+                        <th scope="row"><code>$ git blame premier-fichier.md v2.2</code></th>
+                        <td class="text-danger">Montre le rapport en ignorant les modifications précédentes à la version 2.2.</td>
+                     </tr>
+                     <tr>
+                        <th scope="row"><code>$ git blame --since=2.weeks</code></th>
+                        <td class="text-danger">Montre le rapport en ignorant les modifications ayant été apportées depuis plus de deux semaines.</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+         <div style="width: 570px;" class="bs-callout bs-callout-danger center-small style-font-courier">
+            <h4><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> Git en image</h4>
+            <p>Il n'est pas rare que lorsque vient le temps de joindre une branche quelconque à la branche maîtresse, il faut corriger des conflits puisqu'il y a des lignes qui ont été modifiées. Voici une capture d'écran démontrant ce à quoi le fichier problématique ressemblera après que Git aura tenté de résoudre le conflit, sans succès.</p>
+            <img src="./files/merge.jpg"><br><br>
+            <p>Les endroits où modifications ont eu lieu sont clairement indiquées et facilitent la résolution de conflits. Il suffit de supprimer les parties que nous n'avons pas de besoin, ajouter les fichiers à l'index et exécuter de nouveau la commande <b>merge</b> afin de continuer la procédure. Si nous voulons éviter de spécifier à chaque fois quelle branche contient la bonne version de code, il est possible d'utiliser les stratégies de résolution, en spécifiant soit l'option '<code>--strategy=ours</code>' ou '<code>--strategy=theirs</code>'. </p>
+         </div>
+         <div id="merge" class="bs-callout bs-callout-green  center-small style-font-courier">
+            <h4><span class="glyphicon glyphicon glyphicon-briefcase" aria-hidden="true"></span> Boîte à outils: la commande '<a href="https://git-scm.com/docs/git-merge">merge</a>'</h4>
+            <p>La commande merge sert à appliquer les modifications en provenance d'une autre branche.</p>
+            <div class="table-responsive center-inner">
+               <table class="table table-bordered table-striped">
+                  <thead>
+                     <tr>
+                        <th class="col-xs-4 text-center">Syntaxe</th>
+                        <th class="col-xs-4 text-center">Description</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <th scope="row"><code>$ git merge utilisateur/premiere-fonctionnalite</code></th>
+                        <td class="text-danger">Applique les modifications de la branche utilisateur/premiere-fonctionnalite sur la branche maîtresse.</td>
+                     </tr>
+                     <tr>
+                        <th scope="row"><code>$ git merge --strategy=ours utilisateur/premiere-fonctionnalite</code></th>
+                        <td class="text-danger">Applique les modifications de la branche utilisateur/premiere-fonctionnalite sur la branche maîtresse en gardant les versions de cette dernière, lorsque conflit survient.</td>
+                     </tr>
+                     <tr>
+                        <th scope="row"><code>$ git merge --strategy=theirs utilisateur/premiere-fonctionnalite</code></th>
+                        <td class="text-danger">Applique les modifications de la branche utilisateur/premiere-fonctionnalite sur la branche maîtresse en gardant les versions de la première, lorsque conflit survient.</td>
+                     </tr>
+                     <tr>
+                        <th scope="row"><code>$ git merge --abort</code></th>
+                        <td class="text-danger">Annule l'opération d'application de modifications.</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+         <div class="center-boite">
+            <div class="row">
+               <div class="bs-callout bs-callout-info center-small style-font-courier col-md-6">
+                  <h4><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Trucs et astuces : merge et rebase</h4>
+                  <p>Les commandes <b>merge</b> et <b>rebase</b> sont toutes deux utilisées afin d'incorporer les changements effectués dans une branche au sein d'une autre branche. Par contre, il est important de faire la différence entre les deux. En effet, <b>merge</b> ajoute les modifications d'une branche à la toute fin de la seconde branche alors que <b>rebase</b>, qui est à utiliser avec précaution, réécrit l'historique en incorporant les modifications. Cette seconde option permet de maintenir un historique plus clair, mais peut causer de sérieux problèmes lorsque nous travaillons avec des collaborateurs.</p>
+               </div>
+               <div class="bs-callout bs-callout-warning center-small style-font-courier col-md-5 col-md-offset-1 nopadding">
+                  <h4><span class="glyphicon glyphicon-send" aria-hidden="true"></span> Aller plus loin</h4>
+                  <p>Il arrive parfois qu'un problème s'introduit dans notre projet et qu'il est difficile de cerner à partir de quel commit il s'est introduit. Afin d'accélérer le procédé d'investigation, une commande Git vient à notre rescousse. Elle se nomme <b><a href="#bisect">bisect</a></b> et itère de façon logique parmis nos modifications afin de trouver l'erreur. Il ne nous suffit plus que de spécifier à cet outil si le problème en question existe toujours ou n'a pas encore fait son apparition. Il est aussi possible de lui donner une tâche à exécuter automatiquement, question d'accélérer la manipulation.</p>
+               </div>
+            </div>
+         </div>
+         <div class="bs-callout bs-callout-danger center-small style-font-courier">
+            <h4><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> Git en image</h4>
+            <p>Les outils de comparaison de fichiers et de gestion de conflits peuvent simplifier l'entretien de votre repository Git. Voici une capture d'écran de l'outil <b>kdiff3</b> qui se charge de vous indiquer les conflits et les régler les uns après les autres.</p>
+            <img style="border:3px solid #CE4844; max-width:100%;" src="./files/kdiff3.jpg">
+         </div>
+         <div id="bisect" class="bs-callout bs-callout-green  center-small style-font-courier">
+            <h4><span class="glyphicon glyphicon glyphicon-briefcase" aria-hidden="true"></span> Boîte à outils: la commande '<a href="https://git-scm.com/docs/git-bisect">bisect</a>'</h4>
+            <p>La commande bisect sert à déterminer à partir de quel commit un problème s'est introduit dans le projet.</p>
+            <div class="table-responsive center-inner">
+               <table class="table table-bordered table-striped">
+                  <thead>
+                     <tr>
+                        <th class="col-xs-4 text-center">Syntaxe</th>
+                        <th class="col-xs-4 text-center">Description</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <th scope="row"><code>$ git bisect start</code></th>
+                        <td class="text-danger">Débute l'investigation.</td>
+                     </tr>
+                     <tr>
+                        <th scope="row"><code>$ git bisect good <i>SHA</i></code></th>
+                        <td class="text-danger">Spécifie un commit qui ne contenait pas encore le problème.</td>
+                     </tr>
+                     <tr>
+                        <th scope="row"><code>$ git bisect bad <i>SHA</i></code></th>
+                        <td class="text-danger">Spécifie un commit qui contient le problème en question.</td>
+                     </tr>
+                     <tr>
+                        <th scope="row"><code>$ git bisect good</code></th>
+                        <td class="text-danger">Spécifie que le présent commit n'a pas de problème.</td>
+                     </tr>
+                     <tr>
+                        <th scope="row"><code>$ git bisect bad</code></th>
+                        <td class="text-danger">Spécifie que le présent commit a un problème.</td>
+                     </tr>
+                     <tr>
+                        <th scope="row"><code>$ git bisect visualize</code></th>
+                        <td class="text-danger">Permet de visualiser avec un éditeur graphique.</td>
+                     </tr>
+                     <tr>
+                        <th scope="row"><code>$ git bisect reset</code></th>
+                        <td class="text-danger">Met fin à l'opération en cours.</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+         <div class="bs-callout bs-callout-warning center-small style-font-courier">
+            <h4><span class="glyphicon glyphicon-send" aria-hidden="true"></span> Aller plus loin</h4>
+            <p>
+               Étant développé dans le but d'accélérer le développement d'un projet, Git nous offre plusieurs outils qui sont à notre disposition pour nous aider. Lorsque vient le temps de corriger un conflit suite à la liaison de deux branches, ne serait-ce pas pratique que d'enregistrer notre procédure? C'est ce que nous propose la fabuleuse commande <a href="https://git-scm.com/docs/git-rerere"><b>rerere</b></a>, qui nous permet de mémoriser nos corrections sous forme de macro pour ainsi les réutiliser lorsque bon nous semble.
+               <br><br>
+               De plus, les <a href="https://git-scm.com/docs/githooks"><b>Git hooks</b></a> nous permettent de faire rouler un script lorsqu'un évènement est déclenché. Comme par exemple, avant que les modifications soient envoyées au serveur ou bien à chaque fois que le serveur reçoit de nouvelles modifications.
+               <br><br>
+               Vous pouvez consulter le guide d'utilisation de Git afin de découvrir et mettre en pratique ces fonctionnalités.
+            </p>
+         </div>
+         <h2>Le mot de la fin</h2>
+         <p>Nous avons fait le tour des commandes qui sont à votre disposition lorsque vous développez un projet avec Git et votre boîte à outils commence à être bien rempli. N'oubliez pas que vous pouvez à tout moment clôner un repository ou bien en initialiser un afin de tester des fonctionnalités que vous venez tout juste d'apprendre. Plus vous pratiquer, plus vous serez à l'aise et ça deviendra un réflexe pour vous que de créer une branche, corriger un conflit ou bien même de diagnostiquer l'état d'un repository Git.</p>
+         <p>
+      </div>
+   </body>
+</html>
